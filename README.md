@@ -2,7 +2,7 @@
 
 This repository contains my complete submission for the first part of Worksheet 2. The objective was to build a minimal Operating System kernel from scratch, boot it using the GRUB bootloader, and implement basic drivers to communicate with hardware like the Framebuffer.
 
-## 📂 Project Structure
+## Project Structure
 I organized the project into `source`, `drivers`, and `iso` directories to keep the kernel logic and drivers separate.
 
 **Directory Structure Screenshot:**
@@ -10,7 +10,7 @@ I organized the project into `source`, `drivers`, and `iso` directories to keep 
 
 ---
 
-## 🛠 Implementation Details
+## Implementation Details
 
 ### Task 1: Minimal OS Kernel
 I started by writing `loader.asm` in Assembly. This file sets up the **Multiboot Magic Number** (`0x1BADB002`) so GRUB can recognize the kernel.
@@ -46,7 +46,7 @@ Since QEMU was running in `-nographic` mode, I verified the output by inspecting
 
 ---
 
-## 🚀 How to Build & Run
+## How to Build & Run
 I used a `Makefile` to automate the compilation of Assembly, C, and ISO creation.
  **Run these Commands:**
    ```bash
